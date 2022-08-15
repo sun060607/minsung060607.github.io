@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+a {
+  text-decoration-line: none;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="KakaoTalk_20220703_200942046.mp4" type="video/mp4">
+      </video>
+      
+      <!-- Optional: some overlay text to describe the video -->
+      <div class="content">
+        <h1>MW</h1>
+        <p>개발및 유통 : Artstorm LLC</p>
+        <p>간단 설명</p>
+        <p>2021년 5월 13일에 출시된, Artstorm LLC에서 제작한 해전 게임. </p>
+        <p>본래 해전만을 다뤘으나 점진적으로 육/해/공 모든 전투 환경을 구현하는 게임으로 거듭날 예정이며, 월드 오브 워쉽의 영향을 강하게 받은 게임답게 게임 곳곳에 월드 오브 워쉽의 분위기가 강하게 느껴진다. </p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myFunction()"><a href="index.html">뒤로가기</a></button>
+      </div>
+</body>
+</html>
